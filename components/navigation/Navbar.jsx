@@ -20,15 +20,14 @@ export default function App() {
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-[#575ADB]">
+    <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-white">
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"
+          className="sm:hidden text-black"
         />
         <NavbarBrand>
-          {/* LOGO */}
-          <p className="font-bold text-inherit">ACME</p>
+          <img src="logo.svg" alt="logo"/>
         </NavbarBrand>
       </NavbarContent>
 
@@ -39,7 +38,7 @@ export default function App() {
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="#" aria-current="page">
+          <Link href="#" aria-current="page" className="text-purple-500">
             Customers
           </Link>
         </NavbarItem>
@@ -50,11 +49,11 @@ export default function App() {
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
+        <NavbarItem className="hidden lg:flex ">
+          <Link href="#" >Login</Link>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
+          <Button as={Link} color="secondary" href="#" variant="flat">
             Sign Up
           </Button>
         </NavbarItem>

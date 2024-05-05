@@ -3,8 +3,8 @@ import {Card, CardHeader, CardBody, CardFooter, Divider, Link, Image} from "@nex
 
 const Cards = () => {
   return (
-    <div className='flex md:flex-row flex-col gap-x-12 absolute bottom-0'>
-        <Card className="max-w-[400px] h-[400px] bg-[#575ADB]">
+    <div className='flex items-center justify-center md:flex-row flex-col gap-x-12 mb-24'>
+        <Card className="max-w-[300px] h-[400px] bg-[#575ADB]">
       <CardHeader className="flex gap-3">
         <Image
           alt="nextui logo"
@@ -33,7 +33,7 @@ const Cards = () => {
         </Link>
       </CardFooter>
     </Card>
-    <Card className="max-w-[400px] bg-[#575ADB]">
+    <Card className="max-w-[300px] h-[400px] bg-[#575ADB]">
       <CardHeader className="flex gap-3">
         <Image
           alt="nextui logo"
@@ -62,7 +62,7 @@ const Cards = () => {
         </Link>
       </CardFooter>
     </Card>
-    <Card className="max-w-[400px] bg-[#575ADB]">
+    <Card className="max-w-[300px] h-[400px] bg-[#575ADB]">
       <CardHeader className="flex gap-3">
         <Image
           alt="nextui logo"
